@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive template 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">Google</a></h2>
+
+          <ul class="menu_items">
+            <img src="./Img1.JPG" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">About</a></li>
+            <li><a href="#" class="nav_link">Service</a></li>
+            <li><a href="#" class="nav_link">Project</a></li>
+            <li><a href="#" class="nav_link">Contact</a></li>
+          </ul>
+          <img src="./Img1.JPG" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Boost Personal Productivity</h2>
+            <p>when you think about improving your productivity, you probably don't think of sitting down to read a book</p>
+            <div class="buttons">
+              <button class="btn">Read More</button>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./Img1.JPG" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+    </main>
+
+
+    <section class="tours">
+      <div class="row">
+        <div class="col content-col">
+          <h6>Welcome</h6>
+          <h1>We provide a lot of cool services</h1>
+          <p>It is the most admired and widely used service offered by Google all over the world. You will be stunned to know that more than 70% of the web search engine market share is under Google. To obtain search engine traffic, website administrators first target the Google search engine</p>
+          <a href="#" class="ctn">See More</a>
+        </div>
+        <div class="col image-col" style="float: right; padding-top: 0px; margin-top: auto;">
+          <div class="image-gallery">
+            <img src="./F1.JPG" alt="" >
+            <img src="./F2.JPG" alt="" >
+            <img src="./F3.JPG" alt="" >
+            <img src="./F4.JPG" alt="" >
+            <img src="./F5.JPG" alt="" >
+            <img src="./F6.JPG" alt="" >
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+    
+  </body>
+</html>
